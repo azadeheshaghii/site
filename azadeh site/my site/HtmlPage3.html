@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>pishtazangroup2015</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../scripts/jquery-3.3.1.js"></script>
+    <script src="../scripts/popper.js"></script>
+    <script src="../scripts/bootstrap.js"></script>
+</head>
+<body>
+    <!--mitavan tab ijad kard-->
+    <div class="tab">
+        <button class="tablinks" onClick="openDL(event, 'Download')" id="defaultOpen">عنوان تب اول</button>
+        <button class="tablinks" onClick="openDL(event, 'Desc')">عنوان تب دوم</button>
+        <button class="tablinks" onClick="openDL(event, 'Pass')">عنوان تب سوم</button>
+    </div>
+
+    <div id="Download" class="tabcontent">
+        <h3>
+            سر تیتر تب اول
+
+
+
+        </h3>
+        <p>محتوای تب اول</p>
+    </div>
+
+    <div id="Desc" class="tabcontent">
+        <h3>
+            سر تیتر تب دوم
+        </h3>
+        <p>محتوای تب دوم</p>
+    </div>
+
+    <div id="Pass" class="tabcontent">
+        <h3>
+            سر تیتر تب سوم
+        </h3>
+      <!--ijad ye card dakheli-->
+        <div class="container">
+
+
+            <div class="card" style="width:400px">
+                <div class="card-header bg-warning" dir="ltr">
+
+                    <h6>دانلود آموزش طراحی وب</h6>
+
+                </div>
+                <!--rang ra ba bg vaz kon do ta boody mitooni dashte bashi-->
+                <div class="card-body bg-info">
+                    <span>نویسنده مدیر سایت</span>
+                    <span>   </span>
+                    <span>تعداد بازدید کننده</span>
+                </div>
+                <!--yek image bezar-->
+                <div class="card-body">
+                    <img class="card-img-top" src="../image/10.jpg" alt="Card image" style="width:100%">
+                </div>
+                <div class="card-footer">
+                    <h4 class="card-title"> azadeh & sara</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a href="#" class="btn btn-primary">ادامه مطلب</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+function openDL(evt,dlName){
+	var i, tabcontent,tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for(i = 0; i < tabcontent.length; i++){
+		tabcontent[i].style.display="none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for(i = 0; i < tablinks.length; i++){
+		tablinks[i].className = tablinks[i].className.replace("active","");
+	}
+
+	document.getElementById(dlName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+    </script>
+    <script>
+function openDL(evt,dlName){
+	var i, tabcontent,tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for(i = 0; i < tabcontent.length; i++){
+		tabcontent[i].style.display="none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for(i = 0; i < tablinks.length; i++){
+		tablinks[i].className = tablinks[i].className.replace("active","");
+	}
+	document.getElementById(dlName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+</html>

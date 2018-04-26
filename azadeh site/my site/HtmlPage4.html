@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>pishtazangroup2015</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../scripts/jquery-3.3.1.js"></script>
+    <script src="../scripts/popper.js"></script>
+    <script src="../scripts/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /*.container{   width: 300px;
+            margin: auto;
+            border: 1px solid red; }*/
+        /*.sdcsd {
+            border: 1px solid black;
+            background-color: lightblue;*/
+        /*padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 80px;*/
+        /*padding: 50px 30px 50px 80px;*/
+        /*padding:5%;*/
+        /*}*/
+
+
+        /*h1{   width: 50px;
+
+            /*margin: auto;*/
+        /*border: 1px solid groove;
+             background-color:lightgray;*/
+        
+        .jj{
+            position:relative;
+            left:150px;
+            /*margin-bottom:150px;*/
+
+        }
+        body {
+    margin:0;
+    padding:0;
+    
+    background-size:cover;
+    font-family:sans-serif;
+    width:100%;
+    height:100%;
+}
+.box{
+    width:320px;
+    height:420px;
+    background:darkgray;
+    color:#ffffff;
+    /*bara gharar giri dar vasat*/
+    position:absolute;
+    top:50%;
+    left:50%;
+    /*mohem vasat gharar migire*/
+    transform:translate(-50%,-50%);
+    box-sizing:border-box;
+    /*bara inke be box nachasbe*/
+    padding:70px 38px;
+}
+.unlock{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    position:absolute;
+    /*cheghad biad pain*/
+    top:-50px;
+    /*ax vasat ghar begire*/
+    left:calc(50% - 50px);
+
+}
+h1{
+    margin:0;
+    padding:0 0 20px;
+    text-align:center;
+    font-size:22px;
+}
+
+.box p{
+    margin:0;
+    padding:0;
+    font-weight:bold;
+}
+.box input{
+    /*ye satro begire*/
+    width:100%;
+    margin-bottom:20px;
+}
+.box input[type="text"] , input[type="password"]{
+    border:none;
+    border-bottom:1px solid #fff;
+    /*sbab mishe bebini back ziri ro*/
+    background:transparent;
+    /*aslan az bein mibare kadre text ro*/
+    outline:none;
+    height:40px;
+    color:#fff;
+    font-size:16px;
+
+
+}
+
+.box input[type="submit"]{
+    border:none;
+    
+    height:40px;
+    background:#fb2525;
+    font-size:18px;
+    border-radius:20px;
+}
+.box input[type="submit"]:hover{
+    cursor:pointer;
+    background:#ffc107;
+    color:#000;
+
+}
+.box a{
+    text-decoration:none;
+    font-size:12px;
+    line-height:28px;
+    color:darkgray;
+
+}
+.box a:hover{
+    color:#ffc107;
+}
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            // Hide displayed paragraphs with different speeds
+            $("#login").click(function () {
+
+                $('.box').hide();
+
+
+            });
+        });
+
+                $(document).ready(function(){
+            // Hide displayed paragraphs with different speeds
+                    $('.close').click(function () {
+
+                $('.box').hide();
+
+
+            });
+                });
+
+
+                $(document).ready(function () {
+                    var $listitems = $('.pagination li');
+                    $listitems.click(function () {
+                        $listitems.removeClass('active')
+                        $(this).addClass('active')
+                    });
+                });
+    </script>
+
+    
+
+
+
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="row">
+
+                <h1 class="col col-sm col-md col-lg col-xl" align="center">شرکت طراحی سایت- طراحی لوگو بنر و کارت ویزیت</h1>
+
+            </div>
+        </div>
+    </div>
+    <!--login sakhatn-->
+    <!--<div class="container " style="position:fixed;z-index:1; margin-top:7%" >
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-5 bg-secondary">
+                <div>
+                    <button class="close">&times;</button>
+                </div>
+                <div class="jj">
+                <img  class="rounded-circle img-fluid "
+                     src="../image/images.png" style="width:30% ";height="30%" />
+                    
+                </div>
+              
+                <p class="profile-name-card"></p>
+                <form class="form">
+                    <span class="reauth-email"></span>
+                    <input type="email" class="form-control" placeholder="Email address" required autofocus>
+                    <input type="password" class="form-control" placeholder="Password" required>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </div>
+                    <button class="btn btn-lg btn-secondary btn-block btn-signin" type="submit">Sign in</button>
+                </form>
+                <a href="#" class="forgot-password">
+                    Forgot the password?
+                </a>
+            </div>
+            </div>
+    </div>-->
+
+    <!--login be shekle dovom-->
+  
+    <div class="box"  style="position:fixed;z-index:1">
+        <div>
+            <button class="close">&times;</button>
+        </div>
+        <img src="../image/unlock.jpg" class="unlock" />
+       
+        <h1>Login</h1>
+        <form>
+            
+            <p>username:</p>
+            <input type="text" name="" placeholder="Enter Username" required />
+            <p>password:</p>
+            <input type="password" name="" placeholder="Enter Password" required />
+            <input type="submit" name="" value="Login" id="login"/>
+            <a href="#"> forget password?</a><br />
+            <a href="#">Don't Have an account?</a>
+
+        </form>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="row">
+            <!--yek class container yeki row va be baghiye col midim-->
+
+            <input type="button" class="col-lg" value="عضویت در سایت" />
+
+
+            <input type="button" class="col-lg" value="درباره ی ما واهداف" />
+
+
+            <input type="button" class="col-lg" value="نمونه کارها" />
+
+
+            <input type="button" class="col-lg" value="طراحی گرافیک" />
+
+
+            <input type="button" class="col-lg" value="منوی آموزش" />
+
+
+            <input type="button" class="col-lg" value="تعرفه ها و قیمت ها" />
+
+
+            <input type="button" class="col-lg" value="پرداخت الکترونیکی" />
+
+
+            <input type="button" class="col-lg" value="تماس با ما" />
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="../image/logo.png" alt="city" width="100%">
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="container row" style="margin:auto;">
+        <div class="col-md-4">
+            <!--img fluid sabab mishe ke betoonan image ha kenare ham ghar begiran img-thumbnail yek ghab mide va rounded gooshe ra gerd mikone-->
+            <img class="img-fluid img-thumbnail rounded" style="height:13rem" src="../image/10.jpg">
+        </div>
+        <div class="col-md-4">
+            <img class="img-fluid  img-thumbnail rounded"  src="../image/ویزیت 2.jpg" />
+        </div>
+        <div class="col-md-4">
+            <img class="img-fluid  img-thumbnail rounded"  src="../image/ویزیت,11.jpg" />
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item "><a class="page-link" href="http://localhost:1457/my%20site/HtmlPage1.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="http://localhost:1457/my%20site/HtmlPage3.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="http://localhost:1457/my%20site/HtmlPage6.html">Next</a></li>
+        </ul>
+    </div>
+
+    <footer class="card-footer  " style="background-color:#d0cbcb; margin-top:4rem;">
+
+
+        <div class="container">
+
+
+            <div class="row">
+
+
+                <div class="col-md-12">
+                    <div>
+
+
+                        <a class="icons-sm "><i class="fa fa-facebook fa-lg white-text mr-md-4"> </i></a>
+
+                        <a class="icons-sm "><i class="fa fa-twitter fa-lg white-text mr-md-4"> </i></a>
+
+                        <a class="icons-sm "><i class="fa fa-google-plus fa-lg white-text mr-md-4"> </i></a>
+
+                        <a class="icons-sm "><i class="fa fa-linkedin fa-lg white-text mr-md-4"> </i></a>
+
+                        <a class="icons-sm "><i class="fa fa-instagram fa-lg white-text mr-md-4"> </i></a>
+
+                        <a class="icons-sm "><i class="fa fa-pinterest fa-lg white-text mr-md-4"> </i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+  
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm col-md col-lg col-xl w-100" style="text-align:center;">
+                    <p>Copyright Shop Online 2018  . All Rights Reserved .</p>
+                    <p>Design By: Azadeh Eshaghi | tell:<a href=""> +989132050234</a></p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </footer>
+
+
+</body>
+</html>
